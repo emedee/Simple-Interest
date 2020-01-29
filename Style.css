@@ -9,6 +9,6 @@
 .bord{
     border-radius: 10px !important;
 }
-.solutionField{
-    display: none;
+.tac{
+    text-align: center;
 }
