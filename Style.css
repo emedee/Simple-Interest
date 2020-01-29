@@ -1,0 +1,15 @@
+.mlto{
+    text-align: center;
+    margin-top: 50px !important;
+}
+.disp{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    
+}
+.bord{
+    border-radius: 10px !important;
+}
+.solutionField{
+    display: none;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="col-md-4 mt-4 disp">
+        <div class="card shadow p-4 bord">
+            <h2 class="mb-4">Simple Interest Calculation</h2>
+            <!-- <form> -->
+                <div class="form-group">
+                    <label>Principal</label>
+                    <input type="text" placeholder = 'Enter a positive number' class="form-control" id="input1">
+                </div>
+                <div class="form-group">
+                    <label>Time</label>
+                    <input type="text" placeholder = 'Enter a positive number' class="form-control" id="input2">
+                </div>
+                <div class="form-group">
+                    <label>Rate</label>
+                    <input type="text" placeholder = 'Enter a positive number' class="form-control" id="input3">
+                </div>
+                <div class="mlto">
+                    <button class="btn btn-primary ml-3" id="calculate">Calculate</button><br><br>
+                    <p class="solutionField"><b>The Simple Interest is: <span id="span"></span></b></p>
+                </div>
+            <!-- </form> -->
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="Main.js"></script>
+</body>
+</html>
