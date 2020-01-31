@@ -8,7 +8,8 @@ let inputFields = [principal, time, rate];
 
 calculate.addEventListener('click', function(){
     for(let i=0; i<inputFields.length; i++){
-        if(inputFields[i].value < 1){
+        let letters = /^[a-zA-Z]+$/
+        if(inputFields[i].value < 1 || inputFields[i].value.match(letters)){
             inputFields[i].style.border = '2px solid red';
 
             // Sweet Alert pop-up
@@ -20,9 +21,9 @@ calculate.addEventListener('click', function(){
 
         } else {
             inputFields[i].style.border = '';
+            solution = (principal.value * time.value * rate.value)/100;
+            interest.innerHTML = solution;
         }
-        solution = (principal.value * time.value * rate.value)/100;
-        interest.innerHTML = solution;
         if(solution <= 0){
             solutionField.style.display = 'none'
         } else {
